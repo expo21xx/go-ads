@@ -2,6 +2,8 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/expo21xx/go-ads.svg)](https://pkg.go.dev/github.com/expo21xx/go-ads)
 
+[![ci](https://github.com/expo21xx/go-ads/actions/workflows/ci.yml/badge.svg)](https://github.com/expo21xx/go-ads/actions/workflows/ci.yml)
+
 This is a library to interact with Beckhoff ADS/AMS systems.
 
 ## Usage
