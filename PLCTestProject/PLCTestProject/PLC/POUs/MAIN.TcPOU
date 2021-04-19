@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.6">
+  <POU Name="MAIN" Id="{41b4b42b-7c31-49b3-abb2-c3d7dc97756e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	BoolTestVar    : BOOL;
+	ByteTestVar    : BYTE;
+	USIntTestVar   : USINT;
+	SIntTestVar    : SINT;
+	UIntTestVar    : UINT;
+	WordTestVar    : WORD;
+	UDIntTestVar   : UDINT;
+	DWordTestVar   : DWORD;
+	IntTestVar     : INT;
+	DIntTestVar    : DINT;
+	RealTestVar    : REAL;
+	LRealTestVar   : LREAL;
+	StringTestVar  : STRING;
+	WStringTestVar : WSTRING;
+	TimeTestVar    : TIME;
+	DTTestVar      : DT;
+	TODTestVar     : TOD;
+	
+	RNG              : DRAND;
+	UIntChangingVar  : UINT;
+	LRealChangingVar : LREAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[BoolTestVar := TRUE;
+
+ByteTestVar := 9;
+
+USIntTestVar := 12;
+
+SIntTestVar := -21;
+
+UIntTestVar := 32;
+
+WordTestVar := 54;
+
+UDIntTestVar := 44;
+
+DWordTestVar := 89;
+
+IntTestVar := -23;
+
+DIntTestVar := -23902;
+
+RealTestVar := 2.03032;
+
+LRealTestVar := -4.202902239210;
+
+StringTestVar := WSTRING_TO_STRING("String test var value");
+
+WStringTestVar := "WString test var value with extra ümlauts";
+
+TimeTestVar := T#14MS;
+
+DTTestVar := DT#1972-03-29-00:00:00;
+
+TODTestVar := TOD#15:36:30.123;
+
+RNG();
+LRealChangingVar := LRealChangingVar + RNG.Num;
+
+RNG();
+UIntChangingVar := UIntChangingVar + LREAL_TO_UINT(RNG.Num);]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+      <LineId Id="34" Count="0" />
+      <LineId Id="33" Count="0" />
+      <LineId Id="37" Count="0" />
+      <LineId Id="36" Count="0" />
+      <LineId Id="39" Count="0" />
+      <LineId Id="38" Count="0" />
+      <LineId Id="42" Count="0" />
+      <LineId Id="41" Count="0" />
+      <LineId Id="44" Count="0" />
+      <LineId Id="43" Count="0" />
+      <LineId Id="46" Count="0" />
+      <LineId Id="45" Count="0" />
+      <LineId Id="48" Count="0" />
+      <LineId Id="47" Count="0" />
+      <LineId Id="50" Count="0" />
+      <LineId Id="49" Count="0" />
+      <LineId Id="52" Count="0" />
+      <LineId Id="51" Count="0" />
+      <LineId Id="54" Count="0" />
+      <LineId Id="53" Count="0" />
+      <LineId Id="56" Count="0" />
+      <LineId Id="55" Count="0" />
+      <LineId Id="58" Count="0" />
+      <LineId Id="57" Count="0" />
+      <LineId Id="71" Count="0" />
+      <LineId Id="70" Count="0" />
+      <LineId Id="61" Count="0" />
+      <LineId Id="60" Count="0" />
+      <LineId Id="66" Count="0" />
+      <LineId Id="65" Count="0" />
+      <LineId Id="68" Count="0" />
+      <LineId Id="67" Count="0" />
+      <LineId Id="101" Count="0" />
+      <LineId Id="98" Count="0" />
+      <LineId Id="97" Count="0" />
+      <LineId Id="102" Count="0" />
+      <LineId Id="100" Count="0" />
+      <LineId Id="99" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
